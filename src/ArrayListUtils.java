@@ -29,6 +29,13 @@ public class ArrayListUtils {
      */
     public static int mean(ArrayList<Integer> arr) {
         // TODO: implement this method on a separate branch. Should return the average of elements in the array list
-        return 0;
+        int sum = 0;
+        int average = 0;
+        for (int i = 0; i < arr.size(); i++)
+        {
+            sum += arr.get(i);
+        }
+        average = sum / arr.size();
+        return average;
     }
 }
